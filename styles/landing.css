@@ -1,0 +1,68 @@
+.landing {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img-full/landing.jpg);
+  background-position: top;
+  background-size: cover;
+  z-index: -1;
+}
+
+.welcome {
+  color: white;
+  height: 100vh;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10rem;
+}
+
+.welcome h1 {
+  font-size: 9.8rem;
+  font-weight: 400;
+  margin-top: 15rem;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.welcome p {
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-top: 1rem;
+}
+
+.welcome a {
+  text-decoration: none;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 15rem;
+  margin-left: 30%;
+}
+
+.welcome h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  border: 2px solid white;
+  width: 18rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.welcome hr {
+  border-top: 2px solid white;
+  width: 60rem;
+  margin-top: -2rem;
+  z-index: 0;
+}
+
+.welcome a:hover,
+.welcome h2:hover {
+  color: #313131;
+  border-color: #313131;
+}
+/*# sourceMappingURL=landing.css.map */

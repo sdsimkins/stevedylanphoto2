@@ -1,0 +1,73 @@
+// Global Styles
+$LandingH1: 9rem;
+$LogoH1: 6.7rem;
+$Heading2: 5.1rem;
+$Heading3: 3.8rem;
+$Heading4: 2.8rem;
+$Heading5: 2.1rem;
+$Text: 1.6rem;
+$Label: 1.2rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+}
+
+h1 {
+  font-size: $LogoH1;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+h2 {
+  font-size: $Heading2;
+  font-weight: bold;
+}
+h3 {
+  font-size: $Heading3;
+  font-weight: bold;
+}
+h4 {
+  font-size: $Heading4;
+  font-weight: bold;
+}
+h5 {
+  font-size: $Heading5;
+  font-weight: normal;
+}
+P {
+  font-size: $Text;
+  line-height: 2.4rem;
+}
+a {
+  color: rgb(43, 43, 43);
+  font-size: $Heading5;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+// Landing
+@import "landing";
+
+// Index
+@import "index";
+
+// About
+@import "about";
+
+// Contact
+@import "contact";
+
+// Media Queries

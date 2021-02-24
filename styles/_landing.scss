@@ -1,0 +1,71 @@
+.landing {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img-full/landing.jpg);
+  background-position: top;
+  background-size: cover;
+  z-index: -1;
+}
+
+.welcome {
+  color: white;
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  align-items: center;
+  h1 {
+    font-size: $LandingH1;
+    font-weight: 400;
+    margin-top: 15rem;
+    z-index: 1;
+    white-space: nowrap;
+  }
+  h5 {
+    margin-top: -1rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20%;
+    align-self: center;
+  }
+  h4 {
+    font-size: 3rem;
+    font-weight: 400;
+    border: 2px solid white;
+    width: 15rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 3px;
+  }
+  hr {
+    border-top: 2px solid white;
+    width: 60rem;
+    margin-top: -2rem;
+    z-index: 0;
+  }
+  a:hover,
+  h4:hover {
+    color: #313131;
+    border-color: #313131;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 860px) {
+  .landing {
+    background-image: url(../img-full/landing-mobile.jpg);
+  }
+
+  .welcome {
+    width: 90%;
+    margin: auto;
+  }
+
+  .welcome h1 {
+    font-size: 6.7rem;
+  }
+}
