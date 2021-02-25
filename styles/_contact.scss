@@ -43,6 +43,10 @@
     cursor: pointer;
     background-color: rgba($color: #888888, $alpha: 0.5);
   }
+  .submit-button {
+    display: flex;
+    justify-content: center;
+  }
   .submit-button button {
     margin-left: 0rem;
   }
