@@ -454,6 +454,10 @@ nav .iglink {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
 }
 
 .form-wrapper div {
@@ -472,7 +476,7 @@ nav .iglink {
 }
 
 .form-wrapper input {
-  width: 25rem;
+  width: 100%;
 }
 
 .form-wrapper button {
