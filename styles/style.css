@@ -96,17 +96,18 @@ li {
 
 .welcome a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   margin-top: 20%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
 }
 
 .welcome h4 {
   font-size: 3rem;
   font-weight: 400;
-  border: 2px solid white;
   width: 15rem;
   text-align: center;
   padding: 0.5rem;
@@ -122,8 +123,8 @@ li {
 
 .welcome a:hover,
 .welcome h4:hover {
-  color: #313131;
-  border-color: #313131;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: 860px) {

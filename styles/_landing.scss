@@ -27,14 +27,16 @@
   }
   a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     margin-top: 20%;
     align-self: center;
+    background: rgba($color: #ffffff, $alpha: 0.5);
+    border-radius: 3px;
   }
   h4 {
     font-size: 3rem;
     font-weight: 400;
-    border: 2px solid white;
+    // border: 2px solid rgba($color: #ffffff, $alpha: 0.5);
     width: 15rem;
     text-align: center;
     padding: 0.5rem;
@@ -48,8 +50,9 @@
   }
   a:hover,
   h4:hover {
-    color: #313131;
-    border-color: #313131;
+    background: rgba($color: #ffffff, $alpha: 0.2);
+    color: rgba($color: #ffffff, $alpha: 0.7);
+    // border-color: rgba($color: #ffffff, $alpha: 0.2);
   }
 }
 
