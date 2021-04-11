@@ -27,10 +27,10 @@
   }
   a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(66, 66, 66);
     margin-top: 20%;
     align-self: center;
-    background: rgba($color: #ffffff, $alpha: 0.5);
+    background: white;
     border-radius: 3px;
   }
   h4 {
@@ -50,8 +50,8 @@
   }
   a:hover,
   h4:hover {
-    background: rgba($color: #ffffff, $alpha: 0.2);
-    color: rgba($color: #ffffff, $alpha: 0.7);
+    background: rgb(66, 66, 66);
+    color: white;
     // border-color: rgba($color: #ffffff, $alpha: 0.2);
   }
 }

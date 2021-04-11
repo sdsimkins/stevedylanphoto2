@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -74,12 +74,12 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 10rem;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .welcome h1 {
@@ -96,12 +96,12 @@ li {
 
 .welcome a {
   text-decoration: none;
-  color: #ffffff;
+  color: #424242;
   margin-top: 20%;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  background: rgba(255, 255, 255, 0.5);
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: white;
   border-radius: 3px;
 }
 
@@ -123,8 +123,8 @@ li {
 
 .welcome a:hover,
 .welcome h4:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.7);
+  background: #424242;
+  color: white;
 }
 
 @media screen and (max-width: 860px) {
@@ -149,8 +149,8 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 1.5rem;
 }
 
@@ -200,8 +200,8 @@ nav .iglink {
   margin-right: 1.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(500px, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -213,7 +213,7 @@ nav .iglink {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   cursor: pointer;
@@ -221,7 +221,7 @@ nav .iglink {
 
 .img-container img:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 0.5;
 }
 
@@ -249,14 +249,14 @@ nav .iglink {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
-  transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .full-img.open {
   -webkit-transform: translate(-50%, -50%) scale(1);
-  transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .modal p {
@@ -266,7 +266,7 @@ nav .iglink {
   bottom: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, -5%);
-  transform: translate(-50%, -5%);
+          transform: translate(-50%, -5%);
 }
 
 .mobile-nav {
@@ -297,6 +297,7 @@ nav .iglink {
   transition: translate 1s ease-in;
   width: 100vw;
   height: 100vh;
+  z-index: 2 !important;
 }
 
 .drop-down li {
@@ -311,8 +312,8 @@ nav .iglink {
   .gallery {
     width: 90%;
     margin: auto;
-    -ms-grid-columns: (minmax(300px, 1fr)) [auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .full-img {
     height: auto;
@@ -323,6 +324,16 @@ nav .iglink {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    background: white;
+    -webkit-transition: top 0.3s ease;
+    transition: top 0.3s ease;
+    z-index: 2;
+  }
+  .mobile-nav.active {
+    top: 0 !important;
   }
   .mobile-logo h1 {
     font-size: 2.8rem;
@@ -340,19 +351,21 @@ nav .iglink {
     display: block;
     -webkit-transition: translate 1s ease;
     transition: translate 1s ease;
+    position: fixed;
+    background: white;
   }
   .toggle .line1 {
     -webkit-transform: rotate(-45deg) translate(0px, 11px);
-    transform: rotate(-45deg) translate(0px, 11px);
+            transform: rotate(-45deg) translate(0px, 11px);
   }
   .toggle .line2 {
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 0;
   }
   .toggle .line3 {
     -webkit-transform: rotate(45deg) translate(0px, -11px);
-    transform: rotate(45deg) translate(0px, -11px);
+            transform: rotate(45deg) translate(0px, -11px);
   }
 }
 
@@ -363,18 +376,18 @@ nav .iglink {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-top: 5rem;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about-container .bio {
   margin: 3rem;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 35rem;
-  flex: 1 1 35rem;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
 }
 
 .about-container .bio h3 {
@@ -384,14 +397,14 @@ nav .iglink {
 .about-container .bio-photo {
   margin: 3rem;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 30rem;
-  flex: 1 1 30rem;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
 }
 
 .about-container .bio-photo img {
   width: 80%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .about-container .bio-photo-mobile {
@@ -425,7 +438,7 @@ nav .iglink {
   }
   .bio-photo-mobile img {
     -o-object-fit: 100%;
-    object-fit: 100%;
+       object-fit: 100%;
     width: 100%;
   }
 }
@@ -437,11 +450,11 @@ nav .iglink {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-wrapper {
@@ -450,14 +463,14 @@ nav .iglink {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 500px;
 }
 
@@ -501,8 +514,8 @@ nav .iglink {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-wrapper .submit-button button {
@@ -514,14 +527,14 @@ nav .iglink {
     width: 90%;
     margin: auto;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-top: 5vh;
   }
   .form-head {
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .form-wrapper {
     width: 90%;
@@ -540,8 +553,8 @@ nav .iglink {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -135,6 +135,7 @@ nav {
     text-align: center;
     margin: 8rem;
   }
+  z-index: 2 !important;
 }
 
 // Media Queries
@@ -155,6 +156,14 @@ nav {
   .mobile-nav {
     display: flex;
     width: 100%;
+    top: 0;
+    position: sticky;
+    background: white;
+    transition: top 0.3s ease;
+    z-index: 2;
+  }
+  .mobile-nav.active {
+    top: 0 !important;
   }
   .mobile-logo h1 {
     font-size: 2.8rem;
@@ -171,6 +180,8 @@ nav {
   .drop-down.active {
     display: block;
     transition: translate 1s ease;
+    position: fixed;
+    background: white;
   }
   .toggle .line1 {
     transform: rotate(-45deg) translate(0px, 11px);
