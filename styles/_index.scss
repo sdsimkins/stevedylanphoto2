@@ -217,6 +217,42 @@ nav {
 
 // Media Queries
 
+@media screen and (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+  }
+  .box4 {
+    grid-column: 1 / 2;
+    grid-row: 16 / 19;
+  }
+  .box5 {
+    grid-column: 2 / 3;
+    grid-row: 16 / 18;
+  }
+  .box10 {
+    grid-column: 2 / 3;
+    grid-row: 18 / 21;
+  }
+  .box11 {
+    grid-column: 1 / 2;
+    grid-row: 19 / 21;
+  }
+  .box16 {
+    grid-column: 1 / 2;
+    grid-row: 21 / 24;
+  }
+  .box17 {
+    grid-column: 2 / 3;
+    grid-row: 21 / 23;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery {
+  }
+}
+
 @media screen and (max-width: 860px) {
   nav {
     display: none;
