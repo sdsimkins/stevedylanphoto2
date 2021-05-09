@@ -9,10 +9,10 @@ previews.forEach(preview => {
         modal.classList.add("open"); // I add a class of "open" to the modal which lets us see the dark gray background 
         original.classList.add("open"); // I also add a class of open to the full image 
 
-        const originalSrc = preview.src;
-        original.src = originalSrc
-        const altText = preview.alt;
-        caption.textContent = altText;
+        const originalSrc = preview.getAttribute("data-original"); // this functionality can let us determine what image we see
+        original.src = `./img-gowest/${originalSrc}`; // this is a continuation of the previous line that changes the source of the image file for display 
+        const altText = preview.alt; // declares variable for caption test 
+        caption.textContent = altText; // adds caption to image 
     });
 });
 
