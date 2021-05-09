@@ -396,6 +396,7 @@ nav .iglink {
 .modal.open {
   opacity: 1;
   pointer-events: all;
+  z-index: 3 !important;
 }
 
 .full-img {
@@ -403,15 +404,15 @@ nav .iglink {
   height: 90vh;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .full-img.open {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .modal p {
@@ -428,6 +429,8 @@ nav .iglink {
   display: none;
   position: relative;
   min-height: 8vh;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .burger {
@@ -447,11 +450,16 @@ nav .iglink {
 }
 
 .drop-down {
-  display: none;
-  -webkit-transition: translate 1s ease-in;
-  transition: translate 1s ease-in;
+  position: absolute;
+  background: white;
+  display: block;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
   width: 100vw;
   height: 100vh;
+  clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+  pointer-events: none;
   z-index: 2 !important;
 }
 
@@ -714,10 +722,12 @@ nav .iglink {
   }
   .drop-down.active {
     display: block;
-    -webkit-transition: translate 1s ease;
-    transition: translate 1s ease;
     position: fixed;
-    background: white;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    pointer-events: all;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
   }
   .toggle .line1 {
     -webkit-transform: rotate(-45deg) translate(0px, 11px);
