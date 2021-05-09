@@ -6,7 +6,8 @@
         "_landing.scss",
         "_index.scss",
         "_about.scss",
-        "_contact.scss"
+        "_contact.scss",
+        "_gowest.scss"
     ],
     "names": [],
     "file": "style.css"
