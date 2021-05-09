@@ -1,14 +1,10 @@
 //Index
 body {
   overflow-x: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 }
 
 main {
   overflow-x: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 }
 
 nav {
@@ -241,6 +237,8 @@ nav {
   //-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   pointer-events: all;
   //transition: all 1s ease-out !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 footer {

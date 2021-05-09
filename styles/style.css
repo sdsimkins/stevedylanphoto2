@@ -142,14 +142,10 @@ li {
 
 body {
   overflow-x: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 }
 
 main {
   overflow-x: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
 }
 
 nav {
@@ -481,6 +477,8 @@ nav .iglink {
   display: block;
   position: fixed;
   pointer-events: all;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 footer {
