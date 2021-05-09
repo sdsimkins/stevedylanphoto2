@@ -24,8 +24,8 @@ previews.forEach(preview => {
 modal.addEventListener("click", (e)=> { // we do this by adding an event listener 
     if(e.target.classList.contains("modal")){ //we run an "if" statement that says if the object we click on contains a class of "modal"... 
         modal.classList.remove("open"); // Then we want to remove the class of open 
-        original.src = null; // set our image source to null so it can be updated to something different in the future 
         original.classList.remove("open"); // remove the image class of open to make it go away 
+        original.src = null; // set our image source to null so it can be updated to something different in the future 
     }
 });
 
