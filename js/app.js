@@ -18,6 +18,22 @@ function animate(){
     tl.reversed(!tl.reversed());
 }
 
+barba.init({
+    transitions: [{
+      name: 'opacity-transition',
+      leave(data) {
+        return gsap.to(data.current.container, {
+          opacity: 0
+        });
+      },
+      enter(data) {
+        return gsap.from(data.next.container, {
+          opacity: 0
+        });
+      }
+    }]
+  });
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
