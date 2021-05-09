@@ -222,6 +222,15 @@ nav {
   z-index: 2 !important;
 }
 
+.drop-down.active {
+  display: block;
+  position: fixed;
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  pointer-events: all;
+  transition: all 1s ease-out !important;
+}
+
 // Media Queries
 
 @media screen and (max-width: 1200px) {
@@ -380,14 +389,6 @@ nav {
   }
   .burger {
     display: block;
-  }
-  .drop-down.active {
-    display: block;
-    position: fixed;
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    pointer-events: all;
-    transition: all 1s ease-out;
   }
   .toggle .line1 {
     transform: rotate(-45deg) translate(0px, 11px);

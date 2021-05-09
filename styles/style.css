@@ -468,6 +468,16 @@ nav .iglink {
   margin: 8rem;
 }
 
+.drop-down.active {
+  display: block;
+  position: fixed;
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  pointer-events: all;
+  -webkit-transition: all 1s ease-out !important;
+  transition: all 1s ease-out !important;
+}
+
 @media screen and (max-width: 1200px) {
   .gallery {
     -ms-grid-columns: (1fr)[2];
@@ -719,15 +729,6 @@ nav .iglink {
   }
   .burger {
     display: block;
-  }
-  .drop-down.active {
-    display: block;
-    position: fixed;
-    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    pointer-events: all;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
   }
   .toggle .line1 {
     -webkit-transform: rotate(-45deg) translate(0px, 11px);
