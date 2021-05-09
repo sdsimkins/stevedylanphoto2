@@ -81,3 +81,11 @@
     transform: rotate(45deg) translate(0px, -11px);
   }
 }
+
+@media screen and (max-width: 650px) {
+  .go-west-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+  }
+}

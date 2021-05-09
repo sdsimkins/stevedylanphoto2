@@ -404,15 +404,15 @@ nav .iglink {
   height: 90vh;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .full-img.open {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .modal p {
@@ -431,6 +431,7 @@ nav .iglink {
   min-height: 8vh;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
+  z-index: 2 !important;
 }
 
 .burger {
@@ -1045,6 +1046,17 @@ nav .iglink {
   .toggle .line3 {
     -webkit-transform: rotate(45deg) translate(0px, -11px);
             transform: rotate(45deg) translate(0px, -11px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .go-west-gallery {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-rows: (minmax(300px, 1fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
