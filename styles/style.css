@@ -140,6 +140,10 @@ li {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   width: 350px;
   height: 100vh;
@@ -446,20 +450,16 @@ nav .iglink {
   height: 2px;
   background-color: black;
   margin: 6px;
-  -webkit-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
+  -webkit-transition: all 0.75s ease-in;
+  transition: all 0.75s ease-in;
 }
 
 .drop-down {
   position: absolute;
   background: white;
   display: block;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
   width: 100vw;
   height: 100vh;
-  clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
   pointer-events: none;
   z-index: 2 !important;
 }
@@ -472,11 +472,7 @@ nav .iglink {
 .drop-down.active {
   display: block;
   position: fixed;
-  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   pointer-events: all;
-  -webkit-transition: all 1s ease-out !important;
-  transition: all 1s ease-out !important;
 }
 
 footer {
@@ -491,10 +487,12 @@ footer {
           align-items: center;
   min-height: 5vh;
   width: 100vw;
+  margin: 2rem 0rem;
 }
 
 footer p {
   font-size: 1.4rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
