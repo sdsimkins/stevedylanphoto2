@@ -50,8 +50,9 @@
   }
   a:hover,
   h4:hover {
-    background: rgb(66, 66, 66);
-    color: white;
+    //background: rgb(66, 66, 66);
+    //color: white;
+    background: rgba($color: white, $alpha: 0.5);
     // border-color: rgba($color: #ffffff, $alpha: 0.2);
   }
 }

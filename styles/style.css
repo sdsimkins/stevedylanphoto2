@@ -123,8 +123,7 @@ li {
 
 .welcome a:hover,
 .welcome h4:hover {
-  background: #424242;
-  color: white;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 860px) {
