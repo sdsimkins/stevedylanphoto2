@@ -448,6 +448,7 @@ nav .iglink {
   position: absolute;
   right: 5%;
   top: 30%;
+  z-index: 3;
 }
 
 .burger div {
@@ -465,7 +466,7 @@ nav .iglink {
   display: block;
   width: 100vw;
   height: 100vh;
-  padding-top: 5vh;
+  padding-top: 3vh;
   pointer-events: none;
   z-index: 2 !important;
 }
