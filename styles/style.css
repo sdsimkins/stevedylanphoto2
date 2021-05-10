@@ -145,7 +145,7 @@ body {
 }
 
 main {
-  overflow-x: hidden;
+  position: relative;
 }
 
 nav {
@@ -435,7 +435,8 @@ nav .iglink {
 
 .mobile-nav {
   display: none;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   min-height: 8vh;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
@@ -459,11 +460,12 @@ nav .iglink {
 }
 
 .drop-down {
-  position: absolute;
+  position: fixed;
   background: white;
   display: block;
   width: 100vw;
   height: 100vh;
+  padding-top: 10vh;
   pointer-events: none;
   z-index: 2 !important;
 }
@@ -731,15 +733,17 @@ footer p {
     display: flex;
     width: 100%;
     top: 0;
-    position: -webkit-sticky;
-    position: sticky;
+    position: -webkit-sticky !important;
+    position: sticky !important;
     background: white;
     -webkit-transition: top 0.3s ease;
     transition: top 0.3s ease;
     z-index: 2;
   }
   .mobile-nav.active {
+    position: fixed;
     top: 0 !important;
+    z-index: 3 !important;
   }
   .mobile-logo h1 {
     font-size: 2.8rem;
