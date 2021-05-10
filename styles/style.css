@@ -377,8 +377,8 @@ nav .iglink {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   cursor: pointer;
 }
 
@@ -397,8 +397,8 @@ nav .iglink {
   height: 100%;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .modal.open {
@@ -455,8 +455,8 @@ nav .iglink {
   height: 2px;
   background-color: black;
   margin: 6px;
-  -webkit-transition: all 0.75s ease-in;
-  transition: all 0.75s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .drop-down {
