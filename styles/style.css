@@ -465,7 +465,7 @@ nav .iglink {
   display: block;
   width: 100vw;
   height: 100vh;
-  padding-top: 10vh;
+  padding-top: 5vh;
   pointer-events: none;
   z-index: 2 !important;
 }

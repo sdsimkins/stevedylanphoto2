@@ -10,7 +10,7 @@ burger.addEventListener("click", ()=> {
     burger.classList.toggle("toggle");
 });
 
-tl.fromTo(dropDown, {duration: 1.5, y:"-200vw"}, {duration: 0.75, y: "0vw"});
+tl.fromTo(dropDown, {duration: 1.5, y:"-350vw"}, {duration: 0.75, y: "0vw"});
 tl.reverse(-1);
 tl.reversed(true);
 
