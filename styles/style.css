@@ -758,19 +758,6 @@ footer p {
   .burger {
     display: block;
   }
-  .toggle .line1 {
-    -webkit-transform: rotate(-45deg) translate(0px, 11px);
-            transform: rotate(-45deg) translate(0px, 11px);
-  }
-  .toggle .line2 {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    opacity: 0;
-  }
-  .toggle .line3 {
-    -webkit-transform: rotate(45deg) translate(0px, -11px);
-            transform: rotate(45deg) translate(0px, -11px);
-  }
 }
 
 @media screen and (max-width: 650px) {

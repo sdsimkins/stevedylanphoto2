@@ -417,16 +417,6 @@ footer {
   .burger {
     display: block;
   }
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(0px, 11px);
-  }
-  .toggle .line2 {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  .toggle .line3 {
-    transform: rotate(45deg) translate(0px, -11px);
-  }
 }
 
 @media screen and (max-width: 650px) {
